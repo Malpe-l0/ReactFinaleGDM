@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import redDeckBack from './img/Red_Deck.png';
+import redDeckBack from '../../assets/img/Red_Deck.png';
 
-const cardImages = import.meta.glob('./img/Cards/images/*.png', { eager: true });
+const cardImages = import.meta.glob('../../assets/img/Cards/images/*.png', { eager: true });
 
 export default function BlackJack({ onGameStart, isGameActive }) {
     const [deck, setDeck] = useState([]);
@@ -48,7 +48,7 @@ export default function BlackJack({ onGameStart, isGameActive }) {
     };
 
     const getCardImage = (rank, suit) => {
-        const filename = `./img/Cards/images/${rank}Of${suit}.png`;
+        const filename = `../../assets/img/Cards/images/${rank}Of${suit}.png`;
         const module = cardImages[filename];
         return module ? module.default : null;
     };

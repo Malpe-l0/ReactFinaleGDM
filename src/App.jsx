@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Balatro from './Balatro';
-import BlackJack from './BlackJack';
+import Balatro from './components/Balatro/Balatro';
+import BlackJack from './components/BlackJack/BlackJack';
 
 function App() {
     const [count, setCount] = useState(0)
