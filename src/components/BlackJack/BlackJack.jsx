@@ -307,7 +307,7 @@ export default function BlackJack({ onGameStart, isGameActive }) {
 
                 {gameState === 'initial' || gameState === 'gameOver' ? (
                     <button onClick={startNewGame} style={redButtonStyle} onMouseDown={e => e.currentTarget.style.transform = 'translateY(4px)'} onMouseUp={e => e.currentTarget.style.transform = 'translateY(0)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-                        {gameState === 'initial' ? 'Gioca a Black Jack' : 'Nuova Partita'}
+                        {gameState === 'initial' ? 'Gioca a BlackBalatro' : 'Nuova Partita'}
                     </button>
                 ) : (
                     <div>
